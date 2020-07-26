@@ -13,18 +13,17 @@ class EnterPasscodeViewController: UIViewController{
     @IBOutlet weak var enterPasscode: UITextField!
     @IBOutlet weak var suggestLabel: UILabel!
     
-    var passcodeArray: [String] = ["0000"]
+    @IBOutlet weak var passcodeImg: UIImageView!
+    
+    var passcodeArray: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     @IBAction func numberBtn(_ sender: UIButton) {
         
         let passcodeCount = enterPasscode.text?.count
-        
         
         if enterPasscode.text != nil{
             if let passcodeCount = passcodeCount  {
@@ -32,31 +31,33 @@ class EnterPasscodeViewController: UIViewController{
                     if passcodeCount < 4 {
                         enterPasscode.text = enterPasscode.text! + "\(sender.tag)"
                         suggestLabel.text = "Enter your passcode below."
-                        print("還可繼續輸入")
                         if passcodeCount == 3 {
                             if enterPasscode.text == passcodeArray[0] {
-                                suggestLabel.text = "Password is correct"
-                                print("密碼正確")
+                                suggestLabel.text = "Passcode is correct"
+                                passcodeImg.image = UIImage(named: "勾")
+                                //換頁傳值
+                                self.performSegue(withIdentifier: "unlock", sender: self)
                             } else {
-                                suggestLabel.text = "wrong password"
-                                print("密碼錯誤")
+                                suggestLabel.text = "Passcode is wrong"
+                                passcodeImg.image = UIImage(named: "叉")
                             }
                         }
                     }
                 } else if passcodeCount != 0 {
                     enterPasscode.text!.removeLast()
                     suggestLabel.text = "Enter your passcode below."
-                    print("刪除一位數")
-                    print(passcodeCount)
-
+                    passcodeImg.image = nil
                 } else {
-                    print(passcodeCount)
-                    suggestLabel.text = "Default password is 『0000』"
-                    print("沒有數字")
-                    
+                    suggestLabel.text = "Have you forgotten your passcode?"
                 }
             }
         }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+           let controller = segue.destination as! UnlockPageViewController
+           controller.passcode = passcodeArray
     }
 }
 

@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		76755EA324CB41BE00FB6EEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76755EA224CB41BE00FB6EEC /* AppDelegate.swift */; };
 		76755EA524CB41BE00FB6EEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76755EA424CB41BE00FB6EEC /* SceneDelegate.swift */; };
-		76755EA724CB41BE00FB6EEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76755EA624CB41BE00FB6EEC /* ViewController.swift */; };
+		76755EA724CB41BE00FB6EEC /* EnterPasscodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76755EA624CB41BE00FB6EEC /* EnterPasscodeViewController.swift */; };
 		76755EAA24CB41BE00FB6EEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76755EA824CB41BE00FB6EEC /* Main.storyboard */; };
 		76755EAC24CB41BE00FB6EEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76755EAB24CB41BE00FB6EEC /* Assets.xcassets */; };
 		76755EAF24CB41BE00FB6EEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76755EAD24CB41BE00FB6EEC /* LaunchScreen.storyboard */; };
+		76755EB724CD2B2D00FB6EEC /* SetPasscodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76755EB624CD2B2D00FB6EEC /* SetPasscodeViewController.swift */; };
+		76755EB924CDD98500FB6EEC /* UnlockPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76755EB824CDD98500FB6EEC /* UnlockPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		76755E9F24CB41BE00FB6EEC /* PasscodeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasscodeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76755EA224CB41BE00FB6EEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76755EA424CB41BE00FB6EEC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		76755EA624CB41BE00FB6EEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		76755EA624CB41BE00FB6EEC /* EnterPasscodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterPasscodeViewController.swift; sourceTree = "<group>"; };
 		76755EA924CB41BE00FB6EEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		76755EAB24CB41BE00FB6EEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76755EAE24CB41BE00FB6EEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76755EB024CB41BE00FB6EEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76755EB624CD2B2D00FB6EEC /* SetPasscodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPasscodeViewController.swift; sourceTree = "<group>"; };
+		76755EB824CDD98500FB6EEC /* UnlockPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +62,9 @@
 			children = (
 				76755EA224CB41BE00FB6EEC /* AppDelegate.swift */,
 				76755EA424CB41BE00FB6EEC /* SceneDelegate.swift */,
-				76755EA624CB41BE00FB6EEC /* ViewController.swift */,
+				76755EB624CD2B2D00FB6EEC /* SetPasscodeViewController.swift */,
+				76755EA624CB41BE00FB6EEC /* EnterPasscodeViewController.swift */,
+				76755EB824CDD98500FB6EEC /* UnlockPageViewController.swift */,
 				76755EA824CB41BE00FB6EEC /* Main.storyboard */,
 				76755EAB24CB41BE00FB6EEC /* Assets.xcassets */,
 				76755EAD24CB41BE00FB6EEC /* LaunchScreen.storyboard */,
@@ -138,9 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76755EA724CB41BE00FB6EEC /* ViewController.swift in Sources */,
+				76755EA724CB41BE00FB6EEC /* EnterPasscodeViewController.swift in Sources */,
+				76755EB924CDD98500FB6EEC /* UnlockPageViewController.swift in Sources */,
 				76755EA324CB41BE00FB6EEC /* AppDelegate.swift in Sources */,
 				76755EA524CB41BE00FB6EEC /* SceneDelegate.swift in Sources */,
+				76755EB724CD2B2D00FB6EEC /* SetPasscodeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
